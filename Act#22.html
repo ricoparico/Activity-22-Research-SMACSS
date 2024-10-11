@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <title>SMACSS</title>
+    <style>
+        /* Base styles */
+/* Base styles */
+body {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #c2e299; /* Light background for contrast */
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Layout styles */
+.header {
+    background-image:linear-gradient(rgba(43, 37, 37, 0.75),rgba(0,0,0,0.75)), url(nature.webp);
+    color: white;
+    padding: 20px;
+   
+}
+
+.nav {
+    margin-top: 10px;
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav__item {
+    margin: 0 15px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+    color: #437a2d; /* Change color on hover */
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 194px;
+}
+
+/* Module styles */
+.module {
+    border: 1px solid #ccc;
+    background-color: white; /* White background for module */
+    padding: 15px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.module__title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.module__content {
+    margin: 10px 0;
+}
+
+.button {
+    padding: 10px 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded button */
+}
+
+.button--primary {
+    background-color: #276134;
+}
+.profile{
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+}
+
+
+/* State styles */
+.button--primary:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Dive into Caloy's Universe</h1>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="module">
+            <h2 class="module__title">Caloy's Profile</h2>\
+            <img class="profile" src="profile.jpg"/>
+            <p class="module__content">Hi I am Rico, click the button below to know more about ME.</p>
+            <button class="button button--primary">ABOUT ME</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">© 2024 Dive into Caloy's Universe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
